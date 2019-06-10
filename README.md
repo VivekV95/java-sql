@@ -129,3 +129,8 @@ WHERE CustomerID IN
   - the `id` should be the primary key for the table.
   - account `name` should be unique.
   - account `budget` is required.
+  
+  CREATE TABLE accounts (
+	id SERIAL PRIMARY KEY,
+	name TEXT UNIQUE,
+	budget NUMERIC NOT NULL)
